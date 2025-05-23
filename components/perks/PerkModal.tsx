@@ -10,7 +10,7 @@ interface PerkModalProps {
     id: string
     name: string
     description: string
-    logo: string
+    emoji: string
     tag: string
     redemptionSteps: string[]
     code: string
@@ -37,14 +37,8 @@ export function PerkModal({ perk, onClose }: PerkModalProps) {
         {/* Header */}
         <div className="flex justify-between items-center p-4 border-b border-green-500/30">
           <div className="flex items-center">
-            <div className="w-12 h-12 relative mr-3 rounded-md overflow-hidden bg-green-900/30 flex items-center justify-center">
-              <Image
-                src={perk.logo || "/placeholder.svg"}
-                alt={`${perk.name} logo`}
-                width={48}
-                height={48}
-                className="object-contain"
-              />
+            <div className="w-12 h-12 relative mr-3 rounded-md overflow-hidden bg-green-900/30 flex items-center justify-center text-2xl">
+              {perk.emoji}
             </div>
             <h2 className="text-xl font-bold text-green-400">{perk.name}</h2>
           </div>

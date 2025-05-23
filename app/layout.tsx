@@ -7,7 +7,7 @@ import { ZupassProvider } from "@/components/auth/ZupassProvider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ZuPass Perks",
+  title: "zuperks",
   description: "Exclusive benefits for ZuPass holders",
     generator: 'v0.dev'
 }
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-background">
       <body className={inter.className}>
         <ZupassProvider>{children}</ZupassProvider>
       </body>

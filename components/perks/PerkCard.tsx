@@ -9,7 +9,8 @@ interface PerkCardProps {
     description: string
     tag: string
     offer: string
-    logo: string
+    emoji: string
+    type: "traditional" | "community"
   }
   onClick: () => void
 }
@@ -23,14 +24,8 @@ export function PerkCard({ perk, onClick }: PerkCardProps) {
       <div className="p-6 cursor-pointer">
         <div className="flex justify-between items-start mb-4">
           <div className="flex items-center">
-            <div className="w-12 h-12 relative mr-3 rounded-md overflow-hidden bg-green-900/30 flex items-center justify-center">
-              <Image
-                src={perk.logo || "/placeholder.svg"}
-                alt={`${perk.name} logo`}
-                width={48}
-                height={48}
-                className="object-contain"
-              />
+            <div className="w-12 h-12 relative mr-3 rounded-md overflow-hidden bg-green-900/30 flex items-center justify-center text-2xl">
+              {perk.emoji}
             </div>
             <h3 className="text-xl font-semibold text-white">{perk.name}</h3>
           </div>
