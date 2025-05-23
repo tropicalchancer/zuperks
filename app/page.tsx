@@ -53,6 +53,68 @@ const perks: Perk[] = [
     ],
     code: "ZUPASS25",
     note: "",
+  },
+  {
+    id: "Shaka",
+    name: "Bob Haywood Special Economic Zone assistance",
+    description: "Bob Haywood is a zone expert with 50+ years of experience and can help you think through it.",
+    tag: "SEZs",
+    offer: "30% of his normal 1 hour rate",
+    emoji: "✍️",
+    type: "community",
+    redemptionSteps: [
+      "Contact Bob view email to vet if it is a good fit",
+    ],
+    code: "BIGBOB",
+    note: "Weekly writing sessions every Thursday",
+  },
+  {
+    id: "shaka-services",
+    name: "Shaka's Event & Music Production Services",
+    description: "Venue activation expert and full production manager for live shows and streaming.",
+    tag: "events",
+    offer: "You want Shaka there. Trust me ;p",
+    emoji: "🎤",
+    type: "community",
+    redemptionSteps: [
+      "1. Contact Shaka to discuss your event or production needs.",
+      "2. Mention your zuperks membership to receive the special rate.",
+      "3. Collaborate with Shaka to activate the Open-Source Orchestra Protocol or manage your event."
+    ],
+    code: "SHAKAZUPERK",
+    note: "Available for both virtual and in-person events."
+  },
+  {
+    id: "zeugh-governance-review",
+    name: "Zeugh's Governance Review & Planning",
+    description: "You can have your project's governance setup or plan reviewed by Zeugh, an expert in decentralized governance. Zeugh will provide feedback, suggestions, and best practices to help you optimize your DAO or community structure for transparency, efficiency, and resilience.",
+    tag: "governance",
+    offer: "Free initial review for zuperks members",
+    emoji: "🗳️",
+    type: "community",
+    redemptionSteps: [
+      "1. Contact Zeugh and share your current governance setup or plan.",
+      "2. Mention your zuperks membership to receive a free initial review.",
+      "3. Receive actionable feedback and recommendations tailored to your project."
+    ],
+    code: "ZEUGHGOV",
+    note: "Follow-up consulting session for Zuitzerland members."
+  },
+  {
+    id: "eva-zu-popup-village",
+    name: "Eva Klause: Zu Spinoff Popup Village Organizer gut check",
+    description: "You can get guidance from Eva Klause on what is involved with running a zu spinoff popup village.",
+    tag: "community-building",
+    offer: "Free initial consultation for zuperks members",
+    emoji: "🏕️",
+    type: "community",
+    redemptionSteps: [
+      "1. Contact Eva to discuss your interest in running a zu spinoff popup village.",
+      "2. Mention your zuperks membership to receive a free initial consultation.",
+      "3. Learn about the key steps, best practices, and resources for launching your own popup village."
+    ],
+    code: "EVAVILLAGE",
+    note: "Ongoing support available for active projects."
   }
 ]
 

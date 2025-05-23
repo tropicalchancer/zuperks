@@ -24,7 +24,7 @@ const PREDEFINED_TAGS = [
 ]
 
 // Predefined popup crews (ZuPass credentials)
-const POPUP_CREWS = ["Zuzalu", "ZuConnect", "Vitalia", "AgoraCore", "Edge City", "Network State", "Popup City"]
+const POPUP_CREWS = ["Zuzalu", "ZuConnect", "Vitalia", "AgoraCore", "Edge City", "Network State"]
 
 interface ProposePerkModalProps {
   onClose: () => void
@@ -268,7 +268,7 @@ export function ProposePerkModal({ onClose, onSubmit }: ProposePerkModalProps) {
 
               <div>
                 <Label htmlFor="popupCrew" className="text-green-300">
-                  Popup Crew
+                  zu-cluster
                 </Label>
                 <select
                   id="popupCrew"
@@ -277,7 +277,7 @@ export function ProposePerkModal({ onClose, onSubmit }: ProposePerkModalProps) {
                   onChange={handleChange}
                   className="bg-gray-800 border border-green-500/30 rounded-md text-white focus:border-green-400 focus:ring-green-400/20 w-full p-2"
                 >
-                  <option value="">Select popup crew</option>
+                  <option value="">Select zu-cluster</option>
                   {POPUP_CREWS.map((crew) => (
                     <option key={crew} value={crew}>
                       {crew}
@@ -379,6 +379,20 @@ export function ProposePerkModal({ onClose, onSubmit }: ProposePerkModalProps) {
               </div>
               {formData.logo && <p className="mt-2 text-sm text-green-300">Selected file: {formData.logo.name}</p>}
             </div>
+          </div>
+
+          {/* Discord Section */}
+          <div className="flex items-center space-x-3 py-4">
+            <span className="text-2xl">🟦</span>
+            <span className="text-green-300 font-medium">Join our Discord to discuss your perk proposal!</span>
+            <a
+              href="https://discord.gg/your-discord-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-green-400 underline hover:text-green-300"
+            >
+              Open Discord
+            </a>
           </div>
 
           {/* Submit Button */}

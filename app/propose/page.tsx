@@ -7,73 +7,18 @@ import { ProposePerkModal } from "@/components/perks/ProposePerkModal"
 import Link from "next/link"
 import { ArrowLeft, Plus } from "lucide-react"
 
-// Example submitted proposals
+// Add a single example proposal for ProtonVPN
 const exampleProposals = [
   {
-    id: "discord-nitro",
-    name: "Discord Nitro",
-    description: "Premium Discord experience with enhanced features, custom emojis, and server boosts.",
-    tag: "Communication",
-    offer: "6 months of Discord Nitro free",
-    logo: "/images/discord-logo.png",
-    submittedDate: "2024-01-15",
-    submittedBy: "alex.eth",
-    popupCrew: "Zuzalu",
-  },
-  {
-    id: "github-copilot",
-    name: "GitHub Copilot",
-    description: "AI-powered code completion tool that helps developers write code faster and more efficiently.",
-    tag: "AI Tools",
-    offer: "1 year of GitHub Copilot Individual subscription",
-    logo: "/images/github-logo.png",
-    submittedDate: "2024-01-10",
-    submittedBy: "anonymous",
-    popupCrew: "anonymous",
-  },
-  {
-    id: "canva-pro",
-    name: "Canva Pro",
-    description: "Professional design platform with premium templates, stock photos, and advanced features.",
-    tag: "Design",
-    offer: "12 months of Canva Pro subscription",
-    logo: "/images/canva-logo.png",
-    submittedDate: "2024-01-12",
-    submittedBy: "sarah_designer",
-    popupCrew: "ZuConnect",
-  },
-  {
-    id: "anthropic-claude",
-    name: "Claude Pro",
-    description: "Advanced AI assistant by Anthropic for complex reasoning, analysis, and creative tasks.",
-    tag: "AI Tools",
-    offer: "3 months of Claude Pro subscription",
-    logo: "/images/claude-logo.png",
-    submittedDate: "2024-01-08",
-    submittedBy: "anonymous",
-    popupCrew: "Vitalia",
-  },
-  {
-    id: "railway",
-    name: "Railway Pro",
-    description: "Modern deployment platform that makes it easy to deploy and scale applications.",
-    tag: "Hosting",
-    offer: "$50 credit for Railway Pro features",
-    logo: "/images/railway-logo.png",
-    submittedDate: "2024-01-14",
-    submittedBy: "dev_mike",
-    popupCrew: "anonymous",
-  },
-  {
-    id: "obsidian-sync",
-    name: "Obsidian Sync",
-    description: "End-to-end encrypted sync service for the powerful knowledge management tool Obsidian.",
-    tag: "Productivity",
-    offer: "1 year of Obsidian Sync subscription",
-    logo: "/images/obsidian-logo.png",
-    submittedDate: "2024-01-05",
-    submittedBy: "knowledge_seeker",
-    popupCrew: "AgoraCore",
+    id: "protonvpn",
+    name: "ProtonVPN",
+    description: "Secure your internet connection with ProtonVPN. Get 20% off a monthly subscription.",
+    tag: "Security",
+    offer: "20% off a monthly subscription",
+    logo: null, // You can add a logo path if you have one
+    submittedDate: "2025-04-21",
+    submittedBy: "chance",
+    popupCrew: "Zuitzerland",
   },
 ]
 
