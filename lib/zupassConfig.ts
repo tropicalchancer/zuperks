@@ -1,5 +1,5 @@
 // Define ticket type names
-export type TicketTypeName = "Zuzalu" | "ZuConnect" | "Vitalia" | "AgoraCore"
+export type TicketTypeName = "Zuzalu" | "ZuConnect" | "Vitalia" | "AgoraCore" | "ZuArchitects" | "ZuVillageGeorgia" | "EdgeEsmeralda" | "EdgeEsmeraldaLocal"
 
 // Define the whitelisted tickets configuration
 export const whitelistedTickets: Record<
@@ -131,4 +131,111 @@ export const whitelistedTickets: Record<
       productName: "Contributor",
     },
   ],
+  ZuArchitects: [
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "6fdddc6c-0f84-5176-b950-1107550be180",
+      eventName: "zu-architects",
+      productId: "872e8b73-20b7-50bd-81f8-e31d59ec58c5",
+      productName: "architect"
+    },
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "6fdddc6c-0f84-5176-b950-1107550be180",
+      eventName: "zu-architects",
+      productId: "90344f48-a213-59ba-9f84-77e8094043e3",
+      productName: "Speaker"
+    }
+  ],
+  ZuVillageGeorgia: [
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "6f5f194b-97b5-5fe9-994d-0998f3eacc75",
+      eventName: "ZuVillage Georgia",
+      productId: "aecf9f84-b92f-5b40-8541-cbb48f4d6267",
+      productName: "Contributor"
+    }
+  ],
+  EdgeEsmeraldaLocal: [
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "63502757-b6fc-4a98-8bbb-76cb901d63fe",
+      eventName: "Edge Esmeralda Local",
+      productId: "08bae5ef-3686-4280-8631-cc63792c2a77",
+      productName: "Resident"
+    },
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "63502757-b6fc-4a98-8bbb-76cb901d63fe",
+      eventName: "Edge Esmeralda Local",
+      productId: "81cdaac0-8970-4073-a328-6d595276a361",
+      productName: "Supporter"
+    },
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "63502757-b6fc-4a98-8bbb-76cb901d63fe",
+      eventName: "Edge Esmeralda Local",
+      productId: "33a4ed92-d1ba-49b4-91e7-4f92cd603e48",
+      productName: "Patron"
+    }
+  ],
+  EdgeEsmeralda: [
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "21c7db2e-08e3-4234-9a6e-386a592d63c8",
+      eventName: "Edge Esmeralda",
+      productId: "e669fdde-a8cc-4aa2-af5e-79f6f12378a0",
+      productName: "Issued"
+    },
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "21c7db2e-08e3-4234-9a6e-386a592d63c8",
+      eventName: "Edge Esmeralda",
+      productId: "e0e95c9d-090c-41e7-bcd5-b7d8a518cf42",
+      productName: "Scholar - Week 2"
+    },
+    {
+      pcdType: "eddsa-ticket-pcd",
+      publicKey: [
+        "1ebfb986fbac5113f8e2c72286fe9362f8e7d211dbc68227a468d7b919e75003",
+        "10ec38f11baacad5535525bbe8e343074a483c051aa1616266f3b1df3fb7d204"
+      ],
+      eventId: "21c7db2e-08e3-4234-9a6e-386a592d63c8",
+      eventName: "Edge Esmeralda",
+      productId: "e9e0338b-c2ef-470a-a98e-ad7ee21a183a",
+      productName: "Weekend Day Ticket"
+    }
+  ]
 }
