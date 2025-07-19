@@ -142,6 +142,11 @@ export default function Home() {
                 Propose Perk
               </Button>
             </Link>
+            <Link href="/classic">
+              <Button className="bg-gray-700 hover:bg-gray-800 text-white font-medium">
+                Classic View
+              </Button>
+            </Link>
             <Button
               variant="outline"
               className="border-green-500 text-green-400 hover:bg-green-500/20"
